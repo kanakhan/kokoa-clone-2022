@@ -1,0 +1,126 @@
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg)
+    }
+}
+
+html{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    margin-top: 100px;  
+    display: flex;
+    background-color:lightseagreen;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#smallCircle1{
+    position: relative;
+    left:-25px;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+#smallCircle2{
+    display: inline-block;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+#smallCircle3{
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circles {
+    height: 100px;
+    width:  100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotating 1s ease-in-out infinite;
+}
+
+.squares {
+    margin-top: 50px;
+    height: 100px;
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.square {
+    height: 45px;
+    width: 11px;
+    background-color: white;
+}
+@keyframes bigsml {
+    0%{
+        transform: scaleY(1);
+
+    }
+    25%{
+        transform: scaleY(2.1);
+
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+
+    }
+    
+}
+#sqr1 {
+    animation: bigsml 1s infinite;
+
+}
+#sqr2 {
+    animation: bigsml 1s infinite;
+    animation-delay: 0.08s;
+
+
+}
+#sqr3 {
+    animation: bigsml 1s infinite ;
+    animation-delay: 0.16s;
+
+
+}
+
+#sqr4 {
+    animation: bigsml 1s infinite ;
+    animation-delay: 0.24s;
+
+}
+
+#sqr5 {
+    animation: bigsml 1s infinite ;
+    animation-delay: 0.32s;
+
+}
