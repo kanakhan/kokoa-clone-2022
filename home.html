@@ -2,20 +2,86 @@
 <html lang="kr">
   <head>
     <title>Home - My first website</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="assingment.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="circles">
-      <span id="smallCircle1"></span>
-      <span id="smallCircle2"></span>
-      <span id="smallCircle3"></span>
+    <div class="main-background">
+      <header class="status-bar">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+        <span class="status-bar__text">Playlist</span>
+      </header>
+
+      <div class="now-playing">
+        <div class="now-playing__album-art">
+          <i class="fa-regular fa-image fa-3x"></i>
+        </div>
+        <div class="now-playing__music-info">
+          <span class="now-playing__music-info__music-name"> Random Love </span>
+          <span class="now-playing__music-info__artist-name">
+            by Divay Kapoor</span
+          >
+        </div>
+      </div>
+
+      <div class="music-buttons">
+        <div class="music-buttons__playbutton">
+          <i class="fa-solid fa-play fa-lg"></i>
+          <span class="music-buttons__playbutton__text">Play</span>
+        </div>
+        <div class="music-buttons__heartbutton">
+          <i class="fa-regular fa-heart fa-2x"></i>
+        </div>
+        <div class="music-buttons__addbutton">
+          <i class="fa-solid fa-plus fa-2x"></i>
+        </div>
+      </div>
+      <ul class="playlist">
+        <li class="playlist__music">
+          <div class="playlist__music__albumart"></div>
+          <div class="playlist__music__musicinfo">
+            <span class="playlist__music__musicinfo__musicname"
+              >Matargasti</span
+            >
+            <span class="playlist__music__musicinfo__artistname"
+              >Mohit Chauhan</span
+            >
+          </div>
+        </li>
+        <li class="playlist__music">
+          <div class="playlist__music__albumart"></div>
+          <div class="playlist__music__musicinfo">
+            <span class="playlist__music__musicinfo__musicname">Attitude</span>
+            <span class="playlist__music__musicinfo__artistname"
+              >Lewis OfMan・Attitude</span
+            >
+          </div>
+        </li>
+        <li class="playlist__music">
+          <div class="playlist__music__albumart"></div>
+          <div class="playlist__music__musicinfo">
+            <span class="playlist__music__musicinfo__musicname"
+              >Try Everything</span
+            >
+            <span class="playlist__music__musicinfo__artistname"
+              >Shakira・Zootopia</span
+            >
+          </div>
+        </li>
+        <li class="playlist__music">
+          <div class="playlist__music__albumart"></div>
+          <div class="playlist__music__musicinfo">
+            <span class="playlist__music__musicinfo__musicname">Sunflower</span>
+            <span class="playlist__music__musicinfo__artistname"
+              >Joseph Vincent・Sunflower</span
+            >
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="squares">
-      <span class="square" id="sqr1"></span>
-      <span class="square" id="sqr2"></span>
-      <span class="square" id="sqr3"></span>
-      <span class="square" id="sqr4"></span>
-      <span class="square" id="sqr5"></span>
-    </div>
+
+    <script
+      src="https://kit.fontawesome.com/1b7026f12c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

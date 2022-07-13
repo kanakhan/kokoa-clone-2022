@@ -1,0 +1,159 @@
+:root{
+    --main-border: 2px solid black;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.main-background{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    width:400px;
+    height:825px;
+    border: 5px solid turquoise;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.status-bar {
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.fa-xmark {
+    position:absolute;
+    left:40px
+
+
+}
+.status-bar__text {
+    font-size:x-large;
+    font-weight: bold;
+
+}
+
+.now-playing{
+    margin: 40px 30px;
+    height:140px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.now-playing__album-art{
+    width: 130px;
+    height: 130px;
+    border: var(--main-border);
+    border-radius: 10px;
+    background-color:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.now-playing__music-info{
+    margin-left:20px;
+    width: 42%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.now-playing__music-info__music-name {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 43px;
+}
+.now-playing__music-info__artist-name {
+    font-weight: bold;
+}
+
+.music-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.music-buttons__playbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border: var(--main-border);
+    border-radius: 20px;
+    border-bottom-width: 7px;
+}
+.music-buttons__playbutton__text{
+    margin-left: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.music-buttons__heartbutton {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: var(--main-border);
+    border-bottom-width:7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-buttons__addbutton {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: var(--main-border);
+    border-bottom-width: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.playlist {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.playlist__music {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playlist__music__albumart{
+    margin: 0px 15px 0px 30px;
+    width: 55px;
+    height:55px;
+    border: var(--main-border);
+    border-radius: 10px;
+    background-color: tomato;
+}
+.playlist__music__musicinfo {
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.playlist__music__musicinfo__musicname{
+    font-size: 25px;
+    font-weight: bold;
+}
+.playlist__music:nth-child(2) .playlist__music__albumart{
+    background-color: plum;
+}
+.playlist__music:nth-child(3) .playlist__music__albumart{
+    background-color: blue;
+}
+.playlist__music:nth-child(4) .playlist__music__albumart{
+    background-color: teal;
+}
