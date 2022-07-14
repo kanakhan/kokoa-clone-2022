@@ -1,0 +1,236 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+.body{
+    position: relative;
+    font-family: 'Gowun Batang', serif;
+}
+.menu-bar{
+    height: 100px;
+    background-color:greenyellow;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Gowun Batang', serif;
+}
+.menu-bar__top{
+    margin: 30px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-bar__top__text{
+    font-size: 23px;
+}
+
+.menu-bar__bottom{
+    margin: 0px 13px;
+    position:relative;
+    bottom: 23px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 3px 10px -8px;
+}
+.menu-bar__bottom input{
+    margin: 0px 10px 0px 40px;
+    font-size: 18px;
+    border: none;
+    width: 80%;
+}
+.menu-bar__bottom input:focus{
+    outline: none;
+}
+
+.menu-bar__bottom input::placeholder{
+    color: rgba(0,0,0,0.2);
+}
+
+.fa-magnifying-glass{
+    opacity: 0.2;
+}
+
+.othermenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gowun Batang', serif;
+}
+
+.today-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:0px 13px;
+}
+
+.today-book__head-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.today-book__info{
+    margin-right: 10px;
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bigword{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.today-book__info-image img{
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 140px;
+}
+.today-book__info-add{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.today-book__info-add__name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.today-book__info-add__author{
+    font-size:15px;
+    color:rgba(0,0,0,0.4)
+}
+.today-book__info-add__genre{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.today-book__info-add__genre__box{
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 6px 0px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color:ghostwhite;
+    border-radius: 5px;
+    text-align: center;
+}
+.today-book__info-add__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.today-book__info-add__buttons__bookmark{
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.today-book__info-add__buttons__text{
+    font-size: 13px;
+    padding:13px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+    width: 140px;
+    height: 40px;
+    border-radius:5px;
+    color:white;    
+}
+.topbooks{
+    margin:20px 13px;
+    display: flex;
+    flex-direction: column;
+}
+.topbooks__head{
+    font-size: 25px;
+        font-weight: bold;
+}
+.topbooks__images{
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x:scroll;
+}
+.topbooks__images__book{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+.topbooks__art{
+    border-radius: 10px;
+    height: 160px;
+}
+.topbooks__hoshi{
+    margin-top: 10px;
+    width: 60px;
+}
+
+.topbooks__images::-webkit-scrollbar{
+    height: 10px;
+}
+.topbooks__images::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+}
+.topbooks__images::-webkit-scrollbar-thumb:active{
+    background-color: rgba(0,0,0,0.6);
+}
+.topbooks__images::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.bestguy{
+    margin: 30px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bestguy__head{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bestguy__body{
+    display: flex;
+    margin-top: 30px;
+}
+.bestguy__body__photo{
+    border-radius: 10px;
+    height:200px;
+}
+
+.bestguy__body__info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.bestguy__body__info__name{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.bestguy__body__info__other{
+    width: 90%;
+    color:rgba(0,0,0,0.4)
+}
