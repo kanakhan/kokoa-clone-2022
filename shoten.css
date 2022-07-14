@@ -220,6 +220,7 @@
 }
 
 .bestguy__body__info{
+    margin-top: 10px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -228,9 +229,10 @@
 .bestguy__body__info__name{
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .bestguy__body__info__other{
+    line-height: 24px;
     width: 90%;
-    color:rgba(0,0,0,0.4)
+    color:rgba(0,0,0,0.6)
 }
